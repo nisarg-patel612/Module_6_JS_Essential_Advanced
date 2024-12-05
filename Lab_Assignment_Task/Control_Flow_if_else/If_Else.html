@@ -1,0 +1,65 @@
+<!-- Write a JavaScript Program to check if a number is positive , negative or zero using if-else statement -->
+<!-- Create a JS Program using a SwitchStatement to display the day of the week based on the user input. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number is Positive , Negatice or Zero</title>
+</head>
+<body>
+    <script>
+
+        // check Number is Positive , Negative & Zero using if-else Statement
+        const number = 10
+
+        if (number > 0) {
+            console.log("The Number is Positive.");
+        } else if(number < 0){
+            console.log("The Number is Negative.")
+        } else {
+            console.log("The Number is Zero.");
+        }
+
+
+        // SwitchStatement to display the day of the week based on the user input
+
+        let userInp = parseInt(prompt("Enter a Number to get the day of the week:"))
+
+        switch (userInp) {
+            case 1: 
+                console.log("Monday");
+                break;
+            
+            case 2: 
+                console.log("Tuesday");
+                break;
+
+            case 3: 
+                console.log("Wednesday");
+                break;
+
+            case 4: 
+                console.log("Thursday");
+                break;
+
+            case 5: 
+                console.log("Friday");
+                break;
+
+            case 6: 
+                console.log("Saturday");
+                break;
+
+            case 7: 
+                console.log("Sunday");
+                break;
+        
+            default:
+                console.log("Invalid input! please Enter the Number between 1 to 7");
+                break;
+        }
+    </script>
+</body>
+</html>

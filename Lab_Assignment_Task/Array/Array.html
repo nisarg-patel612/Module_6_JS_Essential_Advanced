@@ -1,0 +1,42 @@
+<!-- Task - 1 Declare an array of fruits (["apple", "banana", "cherry"]). 
+Use JavaScript to:
+    • Add a fruit to the end of the array.
+    • Remove the first fruit from the array.
+    • Log the modified array to the console.
+ -->
+
+<!-- Task - 2 Write a program to find the sum of all elements in an array of numbers -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declare an Array</title>
+</head>
+<body>
+    <script>
+
+        // Declare an array of fruits
+        let fruits = ["apple", "banana", "cherry"]
+
+        fruits.push("orange")
+
+        fruits.shift()
+
+        document.write('<br> Modified Array of :', fruits)
+        console.log("Modified Array of :", fruits)
+
+        // To find the sum of all elements in an array of numbers
+        
+        let numbers = [10,20,30,40,50,60]
+
+        let sum = 0
+
+        for (let i = 0; i < numbers.length; i++) {
+            sum += numbers[i]
+        }
+        document.write('<br> Sum of all Elements :', sum)
+    </script>
+</body>
+</html>

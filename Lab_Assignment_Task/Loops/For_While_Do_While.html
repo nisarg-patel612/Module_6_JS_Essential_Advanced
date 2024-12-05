@@ -1,0 +1,47 @@
+<!-- Task - 1 Write JS Program using ForLoop to Print Numbers from 1 to 10 -->
+<!-- Task - 2 Create a JavaScript program that uses a whileloop to sum all even numbers between 1 and 20 -->
+<!-- Task - 3 Write a do-whileloop that continues to ask the user for input until they enter a number greater than 10 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print the Numbers 1 to 10 Using For Loop</title>
+</head>
+<body>
+    <script>
+        
+        // To Print the Number from 1 to 10 Using Forloop
+
+        for (let i = 0; i < 10; i++) {
+            document.write('<br> Number is ', i)
+        }
+
+        // Sum all even numbers between 1 and 20
+
+        let no = 1
+        let sum = 0
+
+        while (no <= 20) {
+            if (no % 2 === 0) {
+                sum += no
+            }
+            no++;
+        }
+        console.log("The Sum of all even numbers between 1 and 20 is :", sum)
+
+        // do-whileloop that continues to ask the user for input until they enter a number greater than 10
+
+        let UserInput;
+
+        do {
+            UserInput = parseInt(prompt("Enter a Number greater than 10 :"))
+        } while(UserInput <= 10 || isNaN(UserInput))
+
+        console.log("Entered : ", UserInput)
+
+    </script>
+</body>
+</html>
